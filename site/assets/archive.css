@@ -1,0 +1,10 @@
+/* Fixes added when the site was converted from WordPress to static files. */
+
+/* Gallery grid. The theme sizes each thumbnail cell at 33% / 50% / 100% width
+   (desktop / tablet / phone, see the theme stylesheet), but relied on the gallery
+   plugin's own stylesheet, which WordPress no longer loaded, to place the cells
+   side by side. Without it every thumbnail sat on its own row. */
+.ngg-galleryoverview {
+  display: flex;
+  flex-wrap: wrap;
+}
