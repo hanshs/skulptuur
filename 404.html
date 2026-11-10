@@ -2,9 +2,21 @@
 <html lang="et">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // GitHub Pages serves this page for any missing address, at any depth, so its
+      // links are written relative to the site root and this sets that root: the
+      // first path segment on *.github.io project sites, otherwise the domain root.
+      (function () {
+        var base = document.createElement("base");
+        base.href = location.hostname.endsWith(".github.io")
+          ? "/" + location.pathname.split("/")[1] + "/"
+          : "/";
+        document.head.prepend(base);
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lt IE 9]>
-      <script src="/wp-content/themes/starkopf/js/html5.js"></script>
+      <script src="wp-content/themes/starkopf/js/html5.js"></script>
     <![endif]-->
     <meta name="robots" content="noindex, follow" />
     <title>Page not found - Hannes Starkopf</title>
@@ -292,7 +304,7 @@
         color: #fff;
         text-decoration: none;
       }
-      /*# sourceURL=/wp-includes/css/classic-themes.min.css */
+      /*# sourceURL=wp-includes/css/classic-themes.min.css */
     </style>
     <style id="wp-block-styles-placeholder-inline-css">
       :root {
@@ -303,7 +315,7 @@
     <link
       rel="stylesheet"
       id="metaslider-blocks-editor-css-css"
-      href="/wp-content/cache/autoptimize/css/autoptimize_single_fcc725641811736655ab5f101c52bb2d.css"
+      href="wp-content/cache/autoptimize/css/autoptimize_single_fcc725641811736655ab5f101c52bb2d.css"
       media="all"
       property="stylesheet"
     />
@@ -316,25 +328,25 @@
     <link
       rel="stylesheet"
       id="symple_shortcode_styles-css"
-      href="/wp-content/cache/autoptimize/css/autoptimize_single_2b4c98eb502e930cb24b652b51d6d3e7.css"
+      href="wp-content/cache/autoptimize/css/autoptimize_single_2b4c98eb502e930cb24b652b51d6d3e7.css"
       media="all"
     />
     <link
       rel="stylesheet"
       id="style-css"
-      href="/wp-content/cache/autoptimize/css/autoptimize_single_0d4117fba3a169ffaf40ef743ea0115c.css"
+      href="wp-content/cache/autoptimize/css/autoptimize_single_0d4117fba3a169ffaf40ef743ea0115c.css"
       media="all"
     />
     <link
       rel="stylesheet"
       id="wpex-responsive-css"
-      href="/wp-content/cache/autoptimize/css/autoptimize_single_7f4713658a7e8df8cbb781c4a745c999.css"
+      href="wp-content/cache/autoptimize/css/autoptimize_single_7f4713658a7e8df8cbb781c4a745c999.css"
       media="all"
     />
-    <link rel="stylesheet" id="archive-css" href="/assets/archive.css" media="all" />
+    <link rel="stylesheet" id="archive-css" href="assets/archive.css" media="all" />
     <script
       id="jquery-core-js"
-      src="/wp-includes/js/jquery/jquery.min.js"
+      src="wp-includes/js/jquery/jquery.min.js"
     ></script>
     <script id="jquery-core-js-after">
       window.metaslider_jQuery = window.jQuery;
@@ -342,7 +354,7 @@
     </script>
     <script
       id="jquery-migrate-js"
-      src="/wp-includes/js/jquery/jquery-migrate.min.js"
+      src="wp-includes/js/jquery/jquery-migrate.min.js"
     ></script>
     <link rel="https://api.w.org/" href="/wp-json/" />
     <link
@@ -360,9 +372,9 @@
       <div id="header-wrap" class="clr">
         <header id="header" class="site-header clr">
           <div id="logo" class="clr">
-            <a href="/" title="Hannes Starkopf" rel="home"
+            <a href="./" title="Hannes Starkopf" rel="home"
               ><img
-                src="/wp-content/themes/starkopf/images/logo_starkopf_1.png"
+                src="wp-content/themes/starkopf/images/logo_starkopf_1.png"
                 width="340"
                 height="40"
                 alt="Hannes Starkopf"
@@ -382,13 +394,13 @@
                     id="menu-item-367"
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-367"
                   >
-                    <a href="/isiknaitused/subjektiivne-pop/">Isiknäitused</a>
+                    <a href="isiknaitused/subjektiivne-pop/">Isiknäitused</a>
                     <ul class="sub-menu">
                       <li
                         id="menu-item-29"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"
                       >
-                        <a href="/isiknaitused/subjektiivne-pop/"
+                        <a href="isiknaitused/subjektiivne-pop/"
                           >Subjektiivne POP</a
                         >
                       </li>
@@ -396,7 +408,7 @@
                         id="menu-item-28"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"
                       >
-                        <a href="/isiknaitused/starkopfi-kohvik/"
+                        <a href="isiknaitused/starkopfi-kohvik/"
                           >Starkopfi kohvik</a
                         >
                       </li>
@@ -404,13 +416,13 @@
                         id="menu-item-30"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"
                       >
-                        <a href="/isiknaitused/portreed/">Portreed</a>
+                        <a href="isiknaitused/portreed/">Portreed</a>
                       </li>
                       <li
                         id="menu-item-87"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"
                       >
-                        <a href="/isiknaitused/inimlik-voimalus/"
+                        <a href="isiknaitused/inimlik-voimalus/"
                           >Inimlik võimalus</a
                         >
                       </li>
@@ -418,13 +430,13 @@
                         id="menu-item-86"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"
                       >
-                        <a href="/isiknaitused/red-and-hot/">Red &#038; Hot</a>
+                        <a href="isiknaitused/red-and-hot/">Red &#038; Hot</a>
                       </li>
                       <li
                         id="menu-item-85"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"
                       >
-                        <a href="/isiknaitused/mees-naine-ja-kook/"
+                        <a href="isiknaitused/mees-naine-ja-kook/"
                           >Mees, naine ja köök</a
                         >
                       </li>
@@ -432,7 +444,7 @@
                         id="menu-item-84"
                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"
                       >
-                        <a href="/isiknaitused/akt-2008/">Akt 2008</a>
+                        <a href="isiknaitused/akt-2008/">Akt 2008</a>
                       </li>
                     </ul>
                   </li>
@@ -440,31 +452,31 @@
                     id="menu-item-31"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"
                   >
-                    <a href="/varia/">Varia</a>
+                    <a href="varia/">Varia</a>
                   </li>
                   <li
                     id="menu-item-32"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"
                   >
-                    <a href="/sumpoosionid/">Sümpoosionid</a>
+                    <a href="sumpoosionid/">Sümpoosionid</a>
                   </li>
                   <li
                     id="menu-item-33"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"
                   >
-                    <a href="/monumentaal/">Monumentaal</a>
+                    <a href="monumentaal/">Monumentaal</a>
                   </li>
                   <li
                     id="menu-item-34"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"
                   >
-                    <a href="/curriculum-vitae/">CV</a>
+                    <a href="curriculum-vitae/">CV</a>
                   </li>
                   <li
                     id="menu-item-35"
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"
                   >
-                    <a href="/kontakt/">Kontakt</a>
+                    <a href="kontakt/">Kontakt</a>
                   </li>
                 </ul>
               </div>
@@ -497,7 +509,7 @@
       <footer id="copyright-wrap" class="clear">
         <div id="copyright" role="contentinfo" class="clr">
           &copy; Copyright 2026 &middot;
-          <a href="/" title="Hannes Starkopf">Hannes Starkopf</a> &middot;
+          <a href="./" title="Hannes Starkopf">Hannes Starkopf</a> &middot;
           <a href="http://kujurid.ee/" target="_blank"
             >Eesti Kujurite Ühenduse</a
           >
@@ -518,10 +530,10 @@
                     "href_matches": [
                       "/wp-*.php",
                       "/wp-admin/*",
-                      "/wp-content/uploads/*",
-                      "/wp-content/*",
-                      "/wp-content/plugins/*",
-                      "/wp-content/themes/starkopf/*",
+                      "wp-content/uploads/*",
+                      "wp-content/*",
+                      "wp-content/plugins/*",
+                      "wp-content/themes/starkopf/*",
                       "/*\\?(.+)"
                     ]
                   }
@@ -538,7 +550,7 @@
       }
     </script>
     <div id="mobile-search">
-      <form method="get" action="/" role="search" id="mobile-search-form">
+      <form method="get" action="./" role="search" id="mobile-search-form">
         <input
           type="search"
           class="field"
@@ -548,19 +560,19 @@
         />
       </form>
     </div>
-    <script id="wp-hooks-js" src="/wp-includes/js/dist/hooks.min.js"></script>
-    <script id="wp-i18n-js" src="/wp-includes/js/dist/i18n.min.js"></script>
+    <script id="wp-hooks-js" src="wp-includes/js/dist/hooks.min.js"></script>
+    <script id="wp-i18n-js" src="wp-includes/js/dist/i18n.min.js"></script>
     <script id="wp-i18n-js-after">
       wp.i18n.setLocaleData({ "text direction\u0004ltr": ["ltr"] });
       //# sourceURL=wp-i18n-js-after
     </script>
     <script
       id="wpex-plugins-js"
-      src="/wp-content/themes/starkopf/js/plugins.js"
+      src="wp-content/themes/starkopf/js/plugins.js"
     ></script>
     <script
       id="wpex-global-js"
-      src="/wp-content/themes/starkopf/js/global.js"
+      src="wp-content/themes/starkopf/js/global.js"
     ></script>
     <script id="wp-emoji-settings" type="application/json">
       {
@@ -568,7 +580,7 @@
         "ext": ".png",
         "svgUrl": "https://s.w.org/images/core/emoji/17.0.2/svg/",
         "svgExt": ".svg",
-        "source": { "concatemoji": "/wp-includes/js/wp-emoji-release.min.js" }
+        "source": { "concatemoji": "wp-includes/js/wp-emoji-release.min.js" }
       }
     </script>
     <script type="module">
@@ -712,7 +724,7 @@
                 ? a(t.concatemoji)
                 : t.wpemoji && t.twemoji && (a(t.twemoji), a(t.wpemoji))));
         }));
-      //# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+      //# sourceURL=wp-includes/js/wp-emoji-loader.min.js
     </script>
   </body>
 </html>
