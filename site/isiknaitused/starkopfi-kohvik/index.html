@@ -150,7 +150,6 @@
         ]
       }
     </script>
-    <link rel="dns-prefetch" href="//challenges.cloudflare.com" />
     <link
       rel="alternate"
       type="application/rss+xml"
@@ -416,12 +415,6 @@
     </style>
     <link
       rel="stylesheet"
-      id="cf7apps-honeypot-frontend-css"
-      href="/wp-content/plugins/contact-form-7-honeypot/legacy-honeypot/includes/css/honeypot-frontend.css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
       id="symple_shortcode_styles-css"
       href="/wp-content/cache/autoptimize/css/autoptimize_single_2b4c98eb502e930cb24b652b51d6d3e7.css"
       media="all"
@@ -439,6 +432,7 @@
       media="all"
     />
     <link rel="stylesheet" id="archive-css" href="/assets/archive.css" media="all" />
+    <script src="/assets/viewer.js" defer></script>
     <script
       id="jquery-core-js"
       src="/wp-includes/js/jquery/jquery.min.js"
@@ -1007,204 +1001,12 @@
       //# sourceURL=wp-i18n-js-after
     </script>
     <script
-      id="swv-js"
-      src="/wp-content/plugins/contact-form-7/includes/swv/js/index.js"
-    ></script>
-    <script id="contact-form-7-js-translations">
-      (function (domain, translations) {
-        var localeData =
-          translations.locale_data[domain] || translations.locale_data.messages;
-        localeData[""].domain = domain;
-        wp.i18n.setLocaleData(localeData, domain);
-      })("contact-form-7", {
-        "translation-revision-date": "2026-07-03 18:37:27+0000",
-        generator: "GlotPress\/4.0.3",
-        domain: "messages",
-        locale_data: {
-          messages: {
-            "": {
-              domain: "messages",
-              "plural-forms": "nplurals=2; plural=n != 1;",
-              lang: "et_EE",
-            },
-            "This contact form is placed in the wrong place.": [
-              "See kontaktivorm on paigutatud valesse kohta.",
-            ],
-            "Error:": ["Viga:"],
-          },
-        },
-        comment: { reference: "includes\/js\/index.js" },
-      });
-      //# sourceURL=contact-form-7-js-translations
-    </script>
-    <script id="contact-form-7-js-before">
-      var wpcf7 = {
-        api: {
-          root: "\/wp-json\/",
-          namespace: "contact-form-7\/v1",
-        },
-        cached: 1,
-      };
-      //# sourceURL=contact-form-7-js-before
-    </script>
-    <script
-      id="contact-form-7-js"
-      src="/wp-content/plugins/contact-form-7/includes/js/index.js"
-    ></script>
-    <script
-      data-wp-strategy="async"
-      id="cloudflare-turnstile-js"
-      src="https://challenges.cloudflare.com/turnstile/v0/api.js"
-    ></script>
-    <script id="cloudflare-turnstile-js-after">
-      document.addEventListener("wpcf7submit", (e) => turnstile.reset());
-      //# sourceURL=cloudflare-turnstile-js-after
-    </script>
-    <script
       id="wpex-plugins-js"
       src="/wp-content/themes/starkopf/js/plugins.js"
     ></script>
     <script
       id="wpex-global-js"
       src="/wp-content/themes/starkopf/js/global.js"
-    ></script>
-    <script id="photocrati_ajax-js-extra">
-      var photocrati_ajax = {
-        url: "/index.php?photocrati_ajax=1",
-        rest_url: "/wp-json/",
-        wp_home_url: "/",
-        wp_site_url: "/",
-        wp_root_url: "/",
-        wp_plugins_url: "/wp-content/plugins",
-        wp_content_url: "/wp-content",
-        wp_includes_url: "/wp-includes/",
-        ngg_param_slug: "nggallery",
-        rest_nonce: "f832c9ace8",
-      };
-      //# sourceURL=photocrati_ajax-js-extra
-    </script>
-    <script
-      id="photocrati_ajax-js"
-      src="/wp-content/plugins/nextgen-gallery/static/Legacy/ajax.min.js"
-    ></script>
-    <script id="ngg_common-js-extra">
-      var galleries = {};
-      galleries.gallery_9fb2a880d6b435ad2d52281ffdb66089 = {
-        __defaults_set: true,
-        ID: "9fb2a880d6b435ad2d52281ffdb66089",
-        album_ids: null,
-        container_ids: [5],
-        display: null,
-        display_settings: {
-          display_view: "default-view.php",
-          images_per_page: "0",
-          number_of_columns: "0",
-          thumbnail_width: "120",
-          thumbnail_height: "90",
-          show_all_in_lightbox: "0",
-          ajax_pagination: "1",
-          use_imagebrowser_effect: "0",
-          template: "",
-          display_no_images_error: 1,
-          disable_pagination: 0,
-          show_slideshow_link: "0",
-          slideshow_link_text: "[Show slideshow]",
-          override_thumbnail_settings: "0",
-          thumbnail_quality: "100",
-          thumbnail_crop: "1",
-          thumbnail_watermark: 0,
-          ngg_triggers_display: "never",
-          use_lightbox_effect: true,
-          show_piclens_link: "0",
-          piclens_link_text: "[Show PicLens]",
-        },
-        display_type: "photocrati-nextgen_basic_thumbnails",
-        effect_code: null,
-        entity_ids: [],
-        excluded_container_ids: [],
-        exclusions: [],
-        gallery_ids: null,
-        id: "9fb2a880d6b435ad2d52281ffdb66089",
-        ids: null,
-        image_ids: null,
-        images_list_count: null,
-        inner_content: null,
-        is_album_gallery: null,
-        maximum_entity_count: "500",
-        order_by: "filename",
-        order_direction: "ASC",
-        returns: "included",
-        skip_excluding_globally_excluded_images: null,
-        slug: null,
-        sortorder: [],
-        source: "galleries",
-        src: null,
-        tag_ids: null,
-        tagcloud: null,
-        transient_id: null,
-        post_password: "",
-        menu_order: 0,
-        id_field: "ID",
-        extras_post_id: 0,
-      };
-      galleries.gallery_9fb2a880d6b435ad2d52281ffdb66089.wordpress_page_root =
-        "\/isiknaitused\/starkopfi-kohvik\/";
-      var ngg_tiktok_gallery_settings = {
-        global: { link: "0", link_target: "0" },
-      };
-      var ngg_video_gallery_settings = {
-        default: {
-          show_video_controls: true,
-          show_play_pause_controls: true,
-          autoplay_videos: false,
-        },
-      };
-      var nextgen_lightbox_settings = {
-        static_path:
-          "\/wp-content\/plugins\/nextgen-gallery\/static\/Lightbox\/{placeholder}",
-        context: "nextgen_images",
-      };
-      //# sourceURL=ngg_common-js-extra
-    </script>
-    <script
-      id="ngg_common-js"
-      src="/wp-content/plugins/nextgen-gallery/static/GalleryDisplay/common.js"
-    ></script>
-    <script id="ngg_common-js-after">
-      var nggLastTimeoutVal = 1000;
-
-      var nggRetryFailedImage = function (img) {
-        setTimeout(function () {
-          img.src = img.src;
-        }, nggLastTimeoutVal);
-
-        nggLastTimeoutVal += 500;
-      };
-      //# sourceURL=ngg_common-js-after
-    </script>
-    <script
-      id="ngg_lightbox_context-js"
-      src="/wp-content/plugins/nextgen-gallery/static/Lightbox/lightbox_context.js"
-    ></script>
-    <script
-      id="fancybox-0-js"
-      src="/wp-content/plugins/nextgen-gallery/static/Lightbox/fancybox/jquery.easing-1.3.pack.js"
-    ></script>
-    <script
-      id="fancybox-1-js"
-      src="/wp-content/plugins/nextgen-gallery/static/Lightbox/fancybox/jquery.fancybox-1.3.4.pack.js"
-    ></script>
-    <script
-      id="fancybox-3-js"
-      src="/wp-content/plugins/nextgen-gallery/static/Lightbox/fancybox/nextgen_fancybox_init.js"
-    ></script>
-    <script
-      id="nextgen_basic_thumbnails_script-js"
-      src="/wp-content/plugins/nextgen-gallery/static/Thumbnails/nextgen_basic_thumbnails.js"
-    ></script>
-    <script
-      id="nextgen-basic-thumbnails-ajax-pagination-js"
-      src="/wp-content/plugins/nextgen-gallery/static/Thumbnails/ajax_pagination.js"
     ></script>
     <script id="wp-emoji-settings" type="application/json">
       {
